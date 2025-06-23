@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Lifestyle Website</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(to right, #ffffff, #e6f2ff);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px #ffcccc;
+        }
+
+        /* Subheadings */
+        h2,
+        h3 {
+            color: #222;
+        }
+
+        /* Navigation Bar */
+        h3 a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 8px;
+            font-weight: bold;
+        }
+
+        h3 a:hover {
+            color: crimson;
+            text-decoration: underline;
+        }
+
+
+        .box-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+            height: 250px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .box:hover {
+            background-color: #ffe5ec;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .box h3 {
+            font-size: 16px;
+            word-wrap: break-word;
+        }
+
+        .box img {
+            width: 100%;
+            height: 208px;
+            object-fit: cover;
+            border-radius: 8px;
+
+        }
+
+        .small-box {
+            width: 500px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            background-color: #d0f0ff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <h1 style="text-align:center; color:crimson;"><b>Welcome To Healthy Lifestyle Organization</b></h1>
+
+    <!-- Navigation Bar -->
+    <h3 style="text-align:right;">
+        <a href="#home">Home</a> |
+        <a href="reports.html">Reports</a> |
+        <a href="discover.html">Discover</a> |
+        <a href="profile.html">My Profile</a>
+    </h3>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p style="text-align:center;"><b>Click the box to explore:</p></b>
+
+        <div class="box-container">
+            <a href="gender18.html" style="text-decoration:none; color:inherit;">
+                <div class="box">
+                    <img src="Images/health.jpg" alt="Exercise Image">
+                    <h3>Daily Exercises for Men and Women Before Age 18</h3>
+                </div>
+            </a>
+        </div>
+
+
+
+
+        <div class="box-container">
+            <a href="gender20.html" style="text-decoration:none; color:inherit;">
+                <div class="box">
+                    <img src="Images/health1.jpg" alt="Exercise Images">
+                    <h3>Daily Exercises for Men and Women After Age 18</h3>
+
+                </div>
+            </a>
+        </div>
+
+
+        <div class="box-container">
+            <div class="box">
+                <a href="diet.html" style="text-decoration:none; color:inherit;">
+
+                    <img src="Images/diet.jpeg" alt="Nutrition Diet">
+                    <h3>Nutritional Diet</h3>
+
+            </div>
+            </a>
+        </div>
+
+
+        <div class="box-container">
+            <div class="box">
+                <a href="sleep.html" style="text-decoration:none; color:inherit;">
+
+                    <img src="Images/sleep.png" alt="Sleep Tracking">
+                    <h3>Sleep Tracker</h3>
+
+            </div>
+            </a>
+        </div>
+        <div class="box-container">
+            <div class="box small-box">
+                <a href="qna.html" style="text-decoration:none; color:inherit;">
+
+                    <h3>💡Common Questions</h3>
+            </div>
+            </a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

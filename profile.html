@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Light blue gradient */
+  color: #0d47a1; /* Deep blue text */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #0d47a1;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.profile-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #0d47a1;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #0d47a1;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.change-img {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #1565c0;
+  cursor: pointer;
+}
+
+.progress-box {
+  background-color: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+  color: #0d47a1;
+}
+
+.progress-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.progress-box li {
+  padding: 6px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="reports.html">Reports</a> |
+    <a href="discover.html">Discover</a> |
+    <a href="profile.html">My Profile</a>
+  </nav>
+
+  <!-- Profile Section -->
+  <div class="profile-container">
+    <img src="Images/profile.png" alt="Profile Picture" class="profile-pic">
+    <div class="change-img">📸 Change Profile Photo</div>
+
+    <h2>Ishwari Salunkhe</h2>
+    <p><strong>Age:</strong> 18</p>
+    <p><strong>Gender:</strong> Female</p>
+    <p><strong>Fitness Goal:</strong> Build strength and stay healthy</p>
+    <p><strong>Start Date:</strong> June 22, 2025</p>
+
+    <div class="progress-box">
+      <h3>🌟 Current Progress</h3>
+      <ul>
+        <li>✔️ Week 3 completed</li>
+        <li>✔️ 18 workouts done</li>
+        <li>✔️ Nutrition followed 70%</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

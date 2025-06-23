@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Record Sleep</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #4b0082, #6a5acd);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 200px;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #99ccff;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #80bfff;
+    }
+
+    .back-link {
+      margin-top: 20px;
+      color: #eee;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>🛌 Record Your Sleep</h2>
+
+  <form>
+    <label for="bedtime">Bedtime:</label>
+    <input type="time" id="bedtime" name="bedtime" required>
+
+    <label for="waketime">Wake Time:</label>
+    <input type="time" id="waketime" name="waketime" required>
+
+    <button type="submit">Save</button>
+  </form>
+
+  <a href="sleep.html" class="back-link">← Back to Sleep Tracker</a>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Healthy Lifestyle</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Light blue gradient */
+    color: #0d47a1; /* Dark blue for text */
+}
+
+/* Top Navigation in Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+nav {
+    font-size: 16px;
+}
+
+nav a {
+    color: #0d47a1;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    padding: 30px;
+}
+
+/* Summary Stat Cards */
+.content > div:first-child {
+    gap: 20px;
+}
+
+.content > div:first-child div {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    color: #0d47a1;
+}
+
+.content > div:first-child div:hover {
+    transform: scale(1.05);
+}
+
+.content h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Weekly Progress */
+.content > h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    color: #0d47a1;
+}
+
+.content > div:nth-of-type(2) div {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Records Table */
+table {
+    background-color: #ffffff;
+    color: #0d47a1;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #2196f3; /* Bright blue header */
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f8ff;
+}
+
+/* Graph Placeholder */
+.content > div:last-child {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #0d47a1;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+        
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 30px;">
+        <h1 style="color: white; margin: 0;">Healthy Lifestyle Organization</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="reports.html">Reports</a> |
+            <a href="discover.html">Discover</a> |
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+
+
+    <!-- Page Content -->
+    <div class="content">
+
+        <!-- Section 1: Summary Stats -->
+        <div style="display: flex; justify-content: space-around; margin-bottom: 30px;">
+            <div>
+                <h3>🏋️‍♀️ Workouts Done</h3>
+                <p><b>15</b></p>
+            </div>
+            <div>
+                <h3>🔥 Calories Burned</h3>
+                <p><b>1800 kcal</b></p>
+            </div>
+            <div>
+                <h3>⏱️ Time Spent</h3>
+                <p><b>6 hrs</b></p>
+            </div>
+        </div>
+
+        <!-- Section 2: Weekly Progress -->
+        <h3>📅 Weekly Progress</h3>
+        <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px;">
+            <div>Mon ✅</div>
+            <div>Tue ✅</div>
+            <div>Wed ❌</div>
+            <div>Thu ✅</div>
+            <div>Fri ✅</div>
+            <div>Sat ❌</div>
+            <div>Sun ✅</div>
+        </div>
+
+        <!-- Section 3: Past Records Table -->
+        <h3>📋 Past Workout Records</h3>
+        <table border="1" style="margin: 0 auto; border-collapse: collapse;">
+            <tr>
+                <th>Date</th>
+                <th>Workout</th>
+                <th>Time</th>
+                <th>Calories</th>
+            </tr>
+            <tr>
+                <td>June 16</td>
+                <td>Stretch + Cardio</td>
+                <td>30 min</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>June 17</td>
+                <td>Yoga</td>
+                <td>20 min</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>June 18</td>
+                <td>Rest</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+        <!-- Section 4: Graph Placeholder -->
+        <h3 style="margin-top: 40px;">📈 Progress Graph (Coming Soon)</h3>
+        <div
+            style="height: 200px; background-color: #eee; margin: 10px auto; width: 90%; max-width: 500px; display: flex; justify-content: center; align-items: center;">
+            <i>This will show your weekly progress graph here.</i>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
